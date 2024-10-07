@@ -74,8 +74,6 @@ To run the script daily at 6 PM, add the following line to your crontab:
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
 
