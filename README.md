@@ -32,23 +32,6 @@ To get started with this project, you'll need a working environment with AWS CLI
 3. **Integrate with Cron Job**
    - Set up a cron job to execute the shell script daily at 6 PM, reporting the output automatically.
 
-### Example Shell Script
-Here’s a simple example of what your shell script might look like:
-
-```bash
-#!/bin/bash
-
-# AWS Resource Usage Tracking Script
-
-# Define output file
-OUTPUT_FILE="aws_usage_report.txt"
-
-# Fetch AWS resource usage (Example command)
-aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,InstanceType,State.Name]" > "$OUTPUT_FILE"
-
-# Add a timestamp
-echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
-
 
 ### Usage
 After setting up the script, ensure it is executable and test it by running:
