@@ -48,6 +48,3 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,Ins
 
 # Add a timestamp
 echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
-
-chmod +x your_script.sh
-./your_script.sh
