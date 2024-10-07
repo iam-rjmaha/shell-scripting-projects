@@ -48,3 +48,24 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,Ins
 
 # Add a timestamp
 echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
+
+## Usage
+After setting up the script, ensure it is executable and test it by running:
+
+```bash
+chmod +x your_script.sh
+./your_script.sh
+```
+
+You should see the output file `aws_usage_report.txt` generated with the resource usage details.
+
+### Setting Up Cron Job
+To run the script daily at 6 PM, add the following line to your crontab:
+
+```bash
+0 18 * * * /path/to/your_script.sh
+```
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
+
