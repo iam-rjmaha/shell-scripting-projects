@@ -50,10 +50,7 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,Ins
 echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
 
 
-
-
-
-## Usage
+### Usage
 After setting up the script, ensure it is executable and test it by running:
 
 ```bash
