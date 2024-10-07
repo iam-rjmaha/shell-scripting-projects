@@ -9,7 +9,6 @@ As a DevOps engineer, one of the key responsibilities is to maintain cost-effect
 - [Steps to Follow](#steps-to-follow)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - Monitor AWS resource usage
@@ -49,3 +48,6 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,Ins
 
 # Add a timestamp
 echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
+
+chmod +x your_script.sh
+./your_script.sh
