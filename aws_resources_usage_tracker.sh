@@ -15,6 +15,7 @@
 
 
 set -x
+set -e
 
 echo "print s3 bucket list"
 aws s3 ls 
