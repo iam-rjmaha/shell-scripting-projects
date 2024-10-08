@@ -13,26 +13,22 @@
 #AWS lambda
 #AWS IAM users
 
-#Define output file
-OUTPUT_FILE="aws_usage_report.txt"
-#
-#
+
 set -x
 
 echo "print s3 bucket list"
-aws s3 ls > "$OUTPUT_FILE"
+aws s3 ls 
 
-aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' > "$OUTPUT_FILE"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' 
 
 
 
-aws lambda list-functions > "$OUTPUT_FILE"
+aws lambda list-functions 
 
-aws iam list-users > "$OUTPUT_FILE"
+aws iam list-users 
 
 # Add a timestamp
-echo "Report generated on: $(date)" >> "$OUTPUT_FILE"
-~
+echo "Report generated on: $(date)" 
 ~
 ~
 ~
