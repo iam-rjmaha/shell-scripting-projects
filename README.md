@@ -44,10 +44,11 @@ chmod +x your_script.sh
 You should see the output file `aws_usage_report.txt` generated with the resource usage details.
 
 ### Setting Up Cron Job
-To run the script daily at 6 PM, add the following line to your crontab:
+To run the script daily at 6 PM and generates a file containing all the resource usage details, add the following line to your crontab:
 
 ```bash
-0 18 * * * /path/to/your_script.sh
+0 18 * * * /path/to/your_script.sh >> /path/to/aws_usage_report.txt
+
 ```
 
 ## Contributing
