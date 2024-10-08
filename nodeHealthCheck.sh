@@ -14,6 +14,7 @@
 
 #Debug mode
 set -x
+set -e
 
 df -h
 free 
